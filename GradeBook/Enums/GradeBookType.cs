@@ -3,7 +3,7 @@
     public enum GradeBookType
     {
         Standard,
-        Randked, 
+        Ranked, 
         ESNU,
         OneTofour,
         SixPoint
