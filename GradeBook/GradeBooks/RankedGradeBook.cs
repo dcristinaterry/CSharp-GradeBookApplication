@@ -24,18 +24,18 @@ namespace GradeBook.GradeBooks
               
             }
 
-            int counter = 0;
+            int counter = 1;
             foreach (var student in base.Students) {
 
                 var studentAverageGrade = student.AverageGrade;
 
-                if (averageGrade > studentAverageGrade) {
+                if (averageGrade >= studentAverageGrade) {
                     counter++;
                 }
 
             }
 
-            int percentageGrade = (counter * 100) / numStudents;
+            int percentageGrade = (counter / (numStudents+1))*100;
 
 
             if (percentageGrade > 80)
